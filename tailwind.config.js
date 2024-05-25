@@ -37,7 +37,11 @@ module.exports = {
       "5xl": "38px",
       "6xl": "40px",
     },
-    colors: { black: "#000", white: "#fff", grey: "#BBBBBB" },
+    colors: { black: "#000", white: "#fff", grey: "#BBBBBB", iphone: "#1D1D1F" },
+    fontFamily: {
+      SFPro: ["SFPro"],
+    },
+
     extend: {},
   },
   plugins: [],
