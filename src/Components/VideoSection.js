@@ -4,14 +4,15 @@ import { Navigation } from "swiper/modules";
 // import "swiper/swiper-bundle.min.css";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 import "../Assets/css/swiper.css";
-import camera from "../Assets/image/camera.jpg";
+// import camera from "../Assets/image/camera.jpg";
 export default function VideoSection() {
   return (
     <div>
-      <div className="container mx-auto 2xl:px-10 xl:px-7 lg:px-0 lge:px-7 md:px-4 mdsm:px-4 sm:px-5">
+      <div className="container mx-auto 2xl:px-10 xl:px-7 lg:px-0 lge:px-7 md:px-4 mdsm:px-4 sm:px-5 pb-10">
         <p className="2xl:text-[56px] xl:text-[56px] lg:text-[56px] lge:text-[56px] md:text-[50px] mdsm:text-[40px] sm:text-[30px] text-iphone font-semibold sm:px-1 leading-tight pb-10">
-          Get to know iPhone.
+          50 WHOLE YEARS OF BEING AWESOME
         </p>
         <Swiper
           spaceBetween={30}
@@ -39,47 +40,38 @@ export default function VideoSection() {
         >
           <SwiperSlide>
             <div className="">
-              <img src={camera} className="rounded-3xl w-full" />
+              <video
+                controls
+                src="https://rvscas.ac.in/videos/1%20to%2010.mp4"
+                className="rounded-3xl"
+              />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="">
-              <img src={camera} className="rounded-3xl w-full" />
+              <video
+                controls
+                src="https://rvscas.ac.in/videos/11to%2020.mp4"
+                className="rounded-3xl"
+              />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="">
-              <img src={camera} className="rounded-3xl w-full" />
+              <video
+                controls
+                src="https://rvscas.ac.in/videos/21%20to%2030.mp4"
+                className="rounded-3xl"
+              />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="">
-              <img src={camera} className="rounded-3xl w-full" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="">
-              <img src={camera} className="rounded-3xl w-full" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="">
-              <img src={camera} className="rounded-3xl w-full" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="">
-              <img src={camera} className="rounded-3xl w-full" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="">
-              <img src={camera} className="rounded-3xl w-full" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="">
-              <img src={camera} className="rounded-3xl w-full" />
+              <video
+                controls
+                src="https://rvscas.ac.in/videos/34%20%20to%2036.mp4"
+                className="rounded-3xl"
+              />
             </div>
           </SwiperSlide>
         </Swiper>
