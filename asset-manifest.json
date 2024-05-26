@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.35694122.css",
-    "main.js": "/static/js/main.c01126e7.js",
-    "static/js/453.39bf4a51.chunk.js": "/static/js/453.39bf4a51.chunk.js",
-    "static/media/xlarge.mp4": "/static/media/xlarge.6bb50f21fdeddfd09f5b.mp4",
-    "static/media/medium.mp4": "/static/media/medium.e97f4b7e67649539e2ad.mp4",
-    "static/media/small.mp4": "/static/media/small.46b47975d5c080814b15.mp4",
-    "static/media/small.png": "/static/media/small.09aaa92ced363c312664.png",
-    "static/media/Relax.jpg": "/static/media/Relax.ff779f5104ea93eaf0ff.jpg",
-    "static/media/SFPRODISPLAYREGULAR.OTF": "/static/media/SFPRODISPLAYREGULAR.d1f5e6e16dd4f75c3950.OTF",
-    "static/media/sf-pro-display_semibold.woff2": "/static/media/sf-pro-display_semibold.8be5e7c6e16a6ac15d18.woff2",
-    "static/media/sf-pro-display_bold.woff2": "/static/media/sf-pro-display_bold.48c135bac98eb3e9b76f.woff2",
-    "static/media/sf-pro-display_regular.woff2": "/static/media/sf-pro-display_regular.413980aba32fc99123e1.woff2",
-    "index.html": "/index.html",
-    "main.35694122.css.map": "/static/css/main.35694122.css.map",
-    "main.c01126e7.js.map": "/static/js/main.c01126e7.js.map",
-    "453.39bf4a51.chunk.js.map": "/static/js/453.39bf4a51.chunk.js.map"
+    "main.css": "/happy-birthday/static/css/main.274c0161.css",
+    "main.js": "/happy-birthday/static/js/main.dfb2ee58.js",
+    "static/js/453.39bf4a51.chunk.js": "/happy-birthday/static/js/453.39bf4a51.chunk.js",
+    "static/media/xlarge.mp4": "/happy-birthday/static/media/xlarge.6bb50f21fdeddfd09f5b.mp4",
+    "static/media/medium.mp4": "/happy-birthday/static/media/medium.e97f4b7e67649539e2ad.mp4",
+    "static/media/small.mp4": "/happy-birthday/static/media/small.46b47975d5c080814b15.mp4",
+    "static/media/small.png": "/happy-birthday/static/media/small.09aaa92ced363c312664.png",
+    "static/media/Relax.jpg": "/happy-birthday/static/media/Relax.ff779f5104ea93eaf0ff.jpg",
+    "static/media/SFPRODISPLAYREGULAR.OTF": "/happy-birthday/static/media/SFPRODISPLAYREGULAR.d1f5e6e16dd4f75c3950.OTF",
+    "static/media/sf-pro-display_semibold.woff2": "/happy-birthday/static/media/sf-pro-display_semibold.8be5e7c6e16a6ac15d18.woff2",
+    "static/media/sf-pro-display_bold.woff2": "/happy-birthday/static/media/sf-pro-display_bold.48c135bac98eb3e9b76f.woff2",
+    "static/media/sf-pro-display_regular.woff2": "/happy-birthday/static/media/sf-pro-display_regular.413980aba32fc99123e1.woff2",
+    "index.html": "/happy-birthday/index.html",
+    "main.274c0161.css.map": "/happy-birthday/static/css/main.274c0161.css.map",
+    "main.dfb2ee58.js.map": "/happy-birthday/static/js/main.dfb2ee58.js.map",
+    "453.39bf4a51.chunk.js.map": "/happy-birthday/static/js/453.39bf4a51.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.35694122.css",
-    "static/js/main.c01126e7.js"
+    "static/css/main.274c0161.css",
+    "static/js/main.dfb2ee58.js"
   ]
 }
