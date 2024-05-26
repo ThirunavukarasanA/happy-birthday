@@ -9,3 +9,15 @@
   transition: width 0.5s ease, border-radius 0.5s ease;
   border-radius: 10px;
 }
+@font-face {
+  font-family: "Sf pro bold";
+  src: url(./Assets/fonts/sf-pro-display_bold.woff2);
+}
+@font-face {
+  font-family: sfprosemibold;
+  src: url(./Assets/fonts/sf-pro-display_semibold.woff2);
+}
+@font-face {
+  font-family: sfproregular;
+  src: url(./Assets/fonts/sf-pro-display_regular.woff2);
+}

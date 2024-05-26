@@ -1,0 +1,60 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-button-prev {
+  display: block;
+}
+.swiper-button-next {
+  display: block;
+}
+.swiper-button-prev {
+  position: relative;
+  top: 42px;
+  left: -0px;
+  color: #7c0201;
+  display: flex;
+  border: 1px solid #7c0201;
+  background: #fff;
+  padding: 26px;
+}
+.swiper-button-next {
+  position: relative;
+  top: 10px;
+  left: 70px;
+  color: #7c0201;
+  display: flex;
+  border: 1px solid #7c0201;
+  background: #fff;
+  padding: 26px;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  border: 1px solid #fff;
+  background: #7c0201;
+  color: #fff;
+  transition: 0.1s ease-in;
+}
