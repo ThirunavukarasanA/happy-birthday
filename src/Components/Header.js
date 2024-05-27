@@ -4,41 +4,41 @@ import medium from "../Assets/videos/medium.mp4";
 import small from "../Assets/videos/small.mp4";
 import { FaPlay, FaPause } from "react-icons/fa";
 export default function Header() {
-  const [videoWidth, setVideoWidth] = useState(100);
-  const [isPlaying, setIsPlaying] = useState(true);
-  const videoRef = useRef(null);
-  const handleScroll = () => {
-    const maxScroll = 200;
-    const scrollY = window.scrollY;
-    if (scrollY <= maxScroll) {
-      const newWidth = 100 - (scrollY / maxScroll) * 10;
-      setVideoWidth(newWidth);
-    }
-  };
-  const handlePlayPause = () => {
-    if (isPlaying) {
-      videoRef.current.pause();
-    } else {
-      videoRef.current.play();
-    }
-    setIsPlaying(!isPlaying);
-  };
-  useEffect(() => {
-    const video = videoRef.current;
-    const handlePlayPause = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          video.play().catch((error) => {
-            console.error("Error attempting to play the video:", error);
-          });
-        } else {
-          video.pause();
+    const [videoWidth, setVideoWidth] = useState(100);
+    const [isPlaying, setIsPlaying] = useState(true);
+    const videoRef = useRef(null);
+    const handleScroll = () => {
+        const maxScroll = 200;
+        const scrollY = window.scrollY;
+        if (scrollY <= maxScroll) {
+            const newWidth = 100 - (scrollY / maxScroll) * 10;
+            setVideoWidth(newWidth);
         }
-      });
     };
-    const observer = new IntersectionObserver(handlePlayPause, {
-      threshold: 0.5,
-    });
+    const handlePlayPause = () => {
+        if (isPlaying) {
+            videoRef.current.pause();
+        } else {
+            videoRef.current.play();
+        }
+        setIsPlaying(!isPlaying);
+    };
+    useEffect(() => {
+        const video = videoRef.current;
+        const handlePlayPause = (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    video.play().catch((error) => {
+                        console.error('Error attempting to play the video:', error);
+                    });
+                } else {
+                    video.pause();
+                }
+            });
+        };
+        const observer = new IntersectionObserver(handlePlayPause, {
+            threshold: 0.5,
+        });
 
     if (video) {
       observer.observe(video);
@@ -97,7 +97,6 @@ export default function Header() {
               </button>
               {/* </div> */}
             </div>
-          </div>
         </div>
         {/* Desktop view End */}
         {/* Medium view start */}
@@ -176,6 +175,7 @@ export default function Header() {
         </div>
         {/* Samll view End */}
       </div>
+    </div>
     </div>
   );
 }

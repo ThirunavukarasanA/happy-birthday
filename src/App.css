@@ -1,13 +1,15 @@
 @font-face {
-  font-family: SFPro;
-  src: url(./Assets/fonts/sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF);
+    font-family: SFPro;
+    src: url(./Assets/fonts/sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF);
 }
 .family {
-  font-family: "SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif";
+    font-family: 'SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif';
 }
 .transition-width-and-radius {
-  transition: width 0.5s ease, border-radius 0.5s ease;
-  border-radius: 10px;
+    transition:
+        width 0.5s ease,
+        border-radius 0.5s ease;
+    border-radius: 10px;
 }
 @font-face {
   font-family: "Sf pro bold";
