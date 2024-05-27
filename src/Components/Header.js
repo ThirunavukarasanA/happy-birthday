@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import xlarge from "../Assets/videos/xlarge.mp4";
 import medium from "../Assets/videos/medium.mp4";
 import small from "../Assets/videos/small.mp4";
