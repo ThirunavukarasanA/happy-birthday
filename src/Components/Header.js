@@ -93,7 +93,7 @@ export default function Header() {
                         >
                             <source src="https://rvscas.ac.in/videos/Googal%20-%20L.mp4" />
                         </video>
-                        <div className="absolute bottom-20 right-10">
+                        <div className="absolute top-20 right-10">
                             <button
                                 onClick={() => {
                                     toggleMute();
