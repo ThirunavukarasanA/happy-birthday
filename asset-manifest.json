@@ -1,11 +1,8 @@
 {
   "files": {
-    "main.css": "/happy-birthday/static/css/main.274c0161.css",
-    "main.js": "/happy-birthday/static/js/main.d1b2316e.js",
+    "main.css": "/happy-birthday/static/css/main.fdd8a6bf.css",
+    "main.js": "/happy-birthday/static/js/main.e3ae2d2d.js",
     "static/js/453.39bf4a51.chunk.js": "/happy-birthday/static/js/453.39bf4a51.chunk.js",
-    "static/media/xlarge.mp4": "/happy-birthday/static/media/xlarge.6bb50f21fdeddfd09f5b.mp4",
-    "static/media/medium.mp4": "/happy-birthday/static/media/medium.e97f4b7e67649539e2ad.mp4",
-    "static/media/small.mp4": "/happy-birthday/static/media/small.46b47975d5c080814b15.mp4",
     "static/media/small.png": "/happy-birthday/static/media/small.09aaa92ced363c312664.png",
     "static/media/Relax.jpg": "/happy-birthday/static/media/Relax.ff779f5104ea93eaf0ff.jpg",
     "static/media/SFPRODISPLAYREGULAR.OTF": "/happy-birthday/static/media/SFPRODISPLAYREGULAR.d1f5e6e16dd4f75c3950.OTF",
@@ -13,12 +10,12 @@
     "static/media/sf-pro-display_bold.woff2": "/happy-birthday/static/media/sf-pro-display_bold.48c135bac98eb3e9b76f.woff2",
     "static/media/sf-pro-display_regular.woff2": "/happy-birthday/static/media/sf-pro-display_regular.413980aba32fc99123e1.woff2",
     "index.html": "/happy-birthday/index.html",
-    "main.274c0161.css.map": "/happy-birthday/static/css/main.274c0161.css.map",
-    "main.d1b2316e.js.map": "/happy-birthday/static/js/main.d1b2316e.js.map",
+    "main.fdd8a6bf.css.map": "/happy-birthday/static/css/main.fdd8a6bf.css.map",
+    "main.e3ae2d2d.js.map": "/happy-birthday/static/js/main.e3ae2d2d.js.map",
     "453.39bf4a51.chunk.js.map": "/happy-birthday/static/js/453.39bf4a51.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.274c0161.css",
-    "static/js/main.d1b2316e.js"
+    "static/css/main.fdd8a6bf.css",
+    "static/js/main.e3ae2d2d.js"
   ]
 }
