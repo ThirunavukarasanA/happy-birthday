@@ -1,5 +1,5 @@
-import Relax from '../Assets/image/Relax.jpg';
-import Small from '../Assets/image/small.png';
+// import Relax from '../Assets/image/Relax.jpg';
+// import Small from '../Assets/image/small.png';
 export default function Memories() {
     return (
         <div>
@@ -7,15 +7,16 @@ export default function Memories() {
                 <p className="2xl:text-[56px] xl:text-[56px] lg:text-[56px] lge:text-[56px] md:text-[50px] mdsm:text-[40px] sm:text-[30px] text-iphone font-semibold sm:px-1 leading-tight pb-16">
                     Memories Througt Time
                 </p>
-                <div className="2xl:block xl:block lg:block lge:block md:hidden mdsm:hidden sm:hidden">
-                    <img src={Relax} alt="Relax it's iPhone" className="rounded-3xl" />
+                <div className="">
+                    {/* <img src={Relax} alt="Relax it's iPhone" className="rounded-3xl" /> */}
+                    <video controls src="https://rvscas.ac.in/videos/life.mp4" className="rounded-3xl"></video>
                 </div>
-                <div className="2xl:hidden xl:hidden lg:hidden lge:hidden md:block mdsm:block sm:hidden">
+                {/* <div className="2xl:hidden xl:hidden lg:hidden lge:hidden md:block mdsm:block sm:hidden">
                     <img src={Relax} alt="Relax it's iPhone" className="rounded-3xl" />
-                </div>
-                <div className="2xl:hidden xl:hidden lg:hidden lge:hidden md:hidden mdsm:hidden sm:block">
+                </div> */}
+                {/* <div className="2xl:hidden xl:hidden lg:hidden lge:hidden md:hidden mdsm:hidden sm:block">
                     <img src={Small} alt="Relax it's iPhone" className="rounded-3xl" />
-                </div>
+                </div> */}
             </div>
         </div>
     );
