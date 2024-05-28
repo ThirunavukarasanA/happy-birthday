@@ -87,6 +87,7 @@ export default function Header() {
                             ref={videoRef}
                             autoPlay
                             muted
+                            playsInline
                             loop
                             className={`${videoWidth ? 'rounded-3xl duration-500' : 'rounded-none'} `}
                         >
@@ -159,7 +160,7 @@ export default function Header() {
                     {/* Small view Start */}
                     <div className="">
                         <div className="2xl:hidden xl:hidden lg:hidden lge:hidden md:hidden mdsm:flex sm:flex justify-center relative px-5">
-                            <video ref={mobRef} autoPlay muted loop className={`${videoWidth ? 'rounded-3xl duration-500' : 'rounded-none'} `}>
+                            <video ref={mobRef} playsInline autoPlay muted loop className={`${videoWidth ? 'rounded-3xl duration-500' : 'rounded-none'} `}>
                                 <source src="https://rvscas.ac.in/videos/Googal%20-%20P.mp4" />
                             </video>
                             <div className="absolute bottom-20 right-10">
