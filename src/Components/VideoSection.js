@@ -9,7 +9,7 @@ import '../Assets/css/swiper.css';
 export default function VideoSection() {
     return (
         <div>
-            <div className="container mx-auto 2xl:px-10 xl:px-7 lg:px-0 lge:px-7 md:px-4 mdsm:px-4 sm:px-5 pb-10">
+            <div className="container mx-auto 2xl:px-10 xl:px-7 lg:px-0 lge:px-7 md:px-4 mdsm:px-4 sm:px-5 2xl:pb-10 xl:pb-10 lg:pb-10 lge:pb-10 md:pb-40 mdsm:pb-10 sm:pb-10">
                 <p className="2xl:text-[56px] xl:text-[56px] lg:text-[56px] lge:text-[56px] md:text-[50px] mdsm:text-[40px] sm:text-[30px] text-iphone font-semibold sm:px-1 leading-tight pb-10">
                     50 WHOLE YEARS OF BEING AWESOME
                 </p>
@@ -49,12 +49,16 @@ export default function VideoSection() {
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="">
-                            <video controls src="https://rvscas.ac.in/videos/21%20to%2030.mp4" className="rounded-3xl" />
+                            <video controls src="https://rvscas.ac.in/videos/21%20to%2030%20.mp4" className="rounded-3xl" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="">
-                            <video controls src="https://rvscas.ac.in/videos/34%20%20to%2036.mp4" className="rounded-3xl" />
+                            <video
+                                controls
+                                src="https://rvscas.ac.in/videos/31%20to%2035%20trustee%20sir%20birthday%20.mp4"
+                                className="rounded-3xl"
+                            />
                         </div>
                     </SwiperSlide>
                 </Swiper>

@@ -1,14 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
-// import xlarge from '../Assets/videos/xlarge.mp4';
-// import medium from '../Assets/videos/medium.mp4';
-// import small from '../Assets/videos/small.mp4';
 import { IoMdVolumeHigh, IoMdVolumeOff } from 'react-icons/io';
 // import { FaPlay, FaPause } from 'react-icons/fa';
 export default function Header() {
     const [videoWidth, setVideoWidth] = useState(100);
-    // const [isPlaying, setIsPlaying] = useState(true);
     const [muted, setMuted] = useState(true);
     const videoRef = useRef(null);
+    const tabRef = useRef(null);
     const mobRef = useRef(null);
     const handleScroll = () => {
         const maxScroll = 200;
@@ -25,6 +22,13 @@ export default function Header() {
             setMuted(!muted);
         }
     };
+    const toggleTabMute = () => {
+        if (tabRef.current) {
+            const videoElement = tabRef.current;
+            videoElement.muted = !videoElement.muted;
+            setMuted(!muted);
+        }
+    };
     const toggleMobMute = () => {
         if (mobRef.current) {
             const videoElement = mobRef.current;
@@ -32,42 +36,87 @@ export default function Header() {
             setMuted(!muted);
         }
     };
-    // const handlePlayPause = () => {
-    //     if (isPlaying) {
-    //         videoRef.current.pause();
-    //     } else {
-    //         videoRef.current.play();
-    //     }
-    //     setIsPlaying(!isPlaying);
-    // };
     useEffect(() => {
-        // const video = videoRef.current;
-        // const handlePlayPause = (entries) => {
-        //     entries.forEach((entry) => {
-        //         if (entry.isIntersecting) {
-        //             video.play().catch((error) => {
-        //                 console.error('Error attempting to play the video:', error);
-        //             });
-        //         } else {
-        //             video.pause();
-        //         }
-        //     });
-        // };
-        // const observer = new IntersectionObserver(handlePlayPause, {
-        //     threshold: 0.5,
-        // });
-
-        // if (video) {
-        //     observer.observe(video);
-        // }
+        const video = videoRef.current;
+        const handlePlayPause = (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    video.play().catch((error) => {
+                        console.error('Error attempting to play the video:', error);
+                    });
+                } else {
+                    video.pause();
+                }
+            });
+        };
+        const observer = new IntersectionObserver(handlePlayPause, {
+            threshold: 0.5,
+        });
+        if (video) {
+            observer.observe(video);
+        }
+        return () => {
+            if (video) {
+                observer.unobserve(video);
+            }
+        };
+    }, []);
+    useEffect(() => {
+        const tabVideo = tabRef.current;
+        const handelTabPlayPause = (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    tabVideo.play().catch((error) => {
+                        console.error('Error attempting to play the video:', error);
+                    });
+                } else {
+                    tabVideo.pause();
+                }
+            });
+        };
+        const observer = new IntersectionObserver(handelTabPlayPause, {
+            threshold: 0.5,
+        });
+        if (tabVideo) {
+            observer.observe(tabVideo);
+        }
+        return () => {
+            if (tabVideo) {
+                observer.unobserve(tabVideo);
+            }
+        };
+    }, []);
+    useEffect(() => {
+        const mobVideo = mobRef.current;
+        const handelTabPlayPause = (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    mobVideo.play().catch((error) => {
+                        console.error('Error attempting to play the video:', error);
+                    });
+                } else {
+                    mobVideo.pause();
+                }
+            });
+        };
+        const observer = new IntersectionObserver(handelTabPlayPause, {
+            threshold: 0.5,
+        });
+        if (mobVideo) {
+            observer.observe(mobVideo);
+        }
+        return () => {
+            if (mobVideo) {
+                observer.unobserve(mobVideo);
+            }
+        };
+    }, []);
+    useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll);
-            // if (video) {
-            //     observer.unobserve(video);
-            // }
         };
-    }, []);
+    });
     return (
         <div>
             <div className="bg-white">
@@ -81,7 +130,7 @@ export default function Header() {
                 </div> */}
                 {/* Desktop view start */}
                 <div className="">
-                    <div className="2xl:flex xl:flex lg:flex lge:flex md:flex mdsm:hidden sm:hidden justify-center relative">
+                    <div className="2xl:flex xl:flex lg:flex lge:flex md:hidden mdsm:hidden sm:hidden justify-center relative">
                         <video
                             width={`${videoWidth}%`}
                             ref={videoRef}
@@ -91,7 +140,7 @@ export default function Header() {
                             loop
                             className={`${videoWidth ? 'rounded-3xl duration-500' : 'rounded-none'} `}
                         >
-                            <source src="https://rvscas.ac.in/videos/Googal%20-%20L.mp4" />
+                            <source src="https://rvscas.ac.in/videos/Goole%20L.mp4" />
                         </video>
                         <div className="absolute top-20 right-10">
                             <button
@@ -124,19 +173,29 @@ export default function Header() {
                     </div>
                     {/* Desktop view End */}
                     {/* Medium view start */}
-                    {/* <div className="">
+                    <div className="">
                         <div className="2xl:hidden xl:hidden lg:hidden lge:hidden md:flex mdsm:flex sm:hidden justify-center relative">
                             <video
+                                ref={tabRef}
                                 width={`${videoWidth}%`}
-                                
                                 autoPlay
                                 muted
                                 loop
                                 className={`${videoWidth ? 'rounded-3xl duration-500' : 'rounded-none'} `}
                             >
-                                <source src="https://rvscas.ac.in/videos/Googal%20-%20L.mp4" />
+                                <source src="https://rvscas.ac.in/videos/Goole%20TAB.mp4" />
                             </video>
-                            <div className="absolute bottom-24 right-24">
+                            <div className="absolute top-20 right-10">
+                                <button
+                                    onClick={() => {
+                                        toggleTabMute();
+                                    }}
+                                    className="p-3 rounded-full bg-[#454546]"
+                                >
+                                    {muted ? <IoMdVolumeOff className="text-h5 text-white" /> : <IoMdVolumeHigh className="text-h5 text-white" />}
+                                </button>
+                            </div>
+                            {/* <div className="absolute bottom-24 right-24">
                                 <button
                                     onClick={() => {
                                         handlePlayPause();
@@ -153,15 +212,23 @@ export default function Header() {
                                         </>
                                     )}
                                 </button>
-                            </div>
+                            </div> */}
                         </div>
-                    </div> */}
+                    </div>
                     {/* Medium view End */}
                     {/* Small view Start */}
                     <div className="">
-                        <div className="2xl:hidden xl:hidden lg:hidden lge:hidden md:hidden mdsm:flex sm:flex justify-center relative px-5">
-                            <video ref={mobRef} playsInline autoPlay muted loop className={`${videoWidth ? 'rounded-3xl duration-500' : 'rounded-none'} `}>
-                                <source src="https://rvscas.ac.in/videos/Googal%20-%20P.mp4" />
+                        <div className="2xl:hidden xl:hidden lg:hidden lge:hidden md:hidden mdsm:hidden sm:flex justify-center relative px-5 pt-10">
+                            <video
+                                ref={mobRef}
+                                playsInline
+                                autoPlay
+                                muted
+                                loop
+                                className={`${videoWidth ? 'rounded-3xl duration-500' : 'rounded-none'} `}
+                            >
+                                <source src="https://rvscas.ac.in/videos/Goole%20P.mp4" />
+                                {/* <source src="https://rvscas.ac.in/videos/Googal%20-%20P.mp4" /> */}
                             </video>
                             <div className="absolute bottom-20 right-10">
                                 <button
