@@ -39,26 +39,22 @@ export default function VideoSection() {
                 >
                     <SwiperSlide>
                         <div className="">
-                            <video controls src="https://rvscas.ac.in/videos/1%20to%2010.mp4" className="rounded-3xl" />
+                            <video controls preload="auto" src="https://rvscas.ac.in/birthday/1%20to%2010.mp4" className="rounded-3xl" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="">
-                            <video controls src="https://rvscas.ac.in/videos/11to%2020.mp4" className="rounded-3xl" />
+                            <video controls preload="auto" src="https://rvscas.ac.in/birthday/11to%2020.mp4" className="rounded-3xl" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="">
-                            <video controls src="https://rvscas.ac.in/videos/21%20to%2030%20.mp4" className="rounded-3xl" />
+                            <video controls preload="auto" src="https://rvscas.ac.in/birthday/21%20to%2030.mp4" className="rounded-3xl" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="">
-                            <video
-                                controls
-                                src="https://rvscas.ac.in/videos/31%20to%2035%20trustee%20sir%20birthday%20.mp4"
-                                className="rounded-3xl"
-                            />
+                            <video controls preload="auto" src="https://rvscas.ac.in/birthday/31%20to%2035.mp4" className="rounded-3xl" />
                         </div>
                     </SwiperSlide>
                 </Swiper>
