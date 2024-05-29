@@ -6,7 +6,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import '../Assets/css/swiper.css';
 // import camera from "../Assets/image/camera.jpg";
-export default function VideoSection() {
+// import ReactPlayer from 'react-player/youtube';
+export default function VideoSection({ videoId }) {
+    console.log(videoId);
     return (
         <div>
             <div className="container mx-auto 2xl:px-10 xl:px-7 lg:px-0 lge:px-7 md:px-4 mdsm:px-4 sm:px-5 2xl:pb-10 xl:pb-10 lg:pb-10 lge:pb-10 md:pb-40 mdsm:pb-10 sm:pb-10">
@@ -38,24 +40,62 @@ export default function VideoSection() {
                     className="mySwiper"
                 >
                     <SwiperSlide>
-                        <div className="">
-                            <video controls preload="auto" src="https://rvscas.ac.in/birthday/1%20to%2010.mp4" className="rounded-3xl" />
-                        </div>
+                        {/* <div className="">
+                            <video controls preload="auto" src="https://rvscas.ac.in/birthday/1%20to%2010%20(2).mp4" className="rounded-3xl" />
+                        </div> */}
+                        <iframe
+                            width="560"
+                            height="630"
+                            src="https://www.youtube.com/embed/AdJS2U35k4E?si=yy3zf4tKNH0AmHNn&rel=0&enablejsapi=1"
+                            title="Birthday Wishes"
+                            className="rounded-3xl rep"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                        {/* <ReactPlayer url={`https://www.youtube.com/watch?v=${videoId}`} playing controls={true} light={false} /> */}
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="">
+                        {/* <div className="">
                             <video controls preload="auto" src="https://rvscas.ac.in/birthday/11to%2020.mp4" className="rounded-3xl" />
-                        </div>
+                        </div> */}
+                        <iframe
+                            width="560"
+                            height="630"
+                            src="https://www.youtube.com/embed/ZXrMktf7bRE?si=bb8XFe68Pehwsvze"
+                            title="Birthday Wishes"
+                            className="rounded-3xl"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                            referrerPolicy="strict-origin-when-cross-origin"
+                        ></iframe>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="">
+                        {/* <div className="">
                             <video controls preload="auto" src="https://rvscas.ac.in/birthday/21%20to%2030.mp4" className="rounded-3xl" />
-                        </div>
+                        </div> */}
+                        <iframe
+                            width="560"
+                            height="630"
+                            src="https://www.youtube.com/embed/IG2lh33lcrE?si=4A3PmN4jyX3V7NUj?rel=0&enablejsapi=1"
+                            title="Birthday Wishes"
+                            className="rounded-3xl"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="">
+                        {/* <div className="">
                             <video controls preload="auto" src="https://rvscas.ac.in/birthday/31%20to%2035.mp4" className="rounded-3xl" />
-                        </div>
+                        </div> */}
+                        <iframe
+                            width="560"
+                            height="630"
+                            src="https://youtube.com/embed/mwLI5FIwNbE?si=OtbDCsxK-SPTTW2_'?rel=0'"
+                            className="rounded-3xl"
+                            title="Birthday Wishes"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
                     </SwiperSlide>
                 </Swiper>
                 {/* <div className="">
@@ -136,4 +176,7 @@ export default function VideoSection() {
             </div>
         </div>
     );
+}
+{
+    /* <YouTubePlayer videoId="IG2lh33lcrE" />; */
 }
